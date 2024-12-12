@@ -9,16 +9,14 @@ Exercise 1 has been completed for you:
 */
 
 const maxOfTwoNumbers = (x, y) => {
-    if (x >= y) {
-      return x;
-    } else {
-      return y;
-    }
+  if (x >= y) {
+    return x;
+  } else {
+    return y;
   }
-  
-  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
-  
-  
+};
+
+console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9));
 
 /*
 Exercise 2: isAdult()
@@ -31,18 +29,14 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 const isAdult = (age) => {
-    if (age >= 18){
-        return "Adult";
-    }
-    else {
-        return "Minor";
-    }
+  if (age >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
 };
 
-
-console.log('Exercise 2 Result:', isAdult(21));
-
-
+console.log("Exercise 2 Result:", isAdult(21));
 
 /*
 Exercise 3: isCharAVowel()
@@ -57,18 +51,20 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 const isCharAVowel = (char) => {
-    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
-        return true;
-    }
-    else {
-        return false;
-    }
+  if (
+    char === "a" ||
+    char === "e" ||
+    char === "i" ||
+    char === "o" ||
+    char === "u"
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-
-console.log('Exercise 3 Result:', isCharAVowel("a"));
-
-
+console.log("Exercise 3 Result:", isCharAVowel("a"));
 
 /*
 Exercise 4: generateEmail()
@@ -81,14 +77,11 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
-const generateEmail = (name,domain) =>{
-    return name + "@" + domain;
+const generateEmail = (name, domain) => {
+  return name + "@" + domain;
 };
 
-
-console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
-
-
+console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 
 /*
 Exercise 5: greetUser()
@@ -102,14 +95,12 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const greetUser = (name,time) =>{
-    const greeting = "Good " + time + ", " + name + "!";
-    return greeting;
+const greetUser = (name, time) => {
+  const greeting = "Good " + time + ", " + name + "!";
+  return greeting;
 };
 
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
-
-
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
 
 /*
 Exercise 6: maxOfThree()
@@ -121,17 +112,15 @@ Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
-const maxOfThree = (a,b,c) => {
-    if (a >= b && a >= c){
-           return a;
-       }
-    else if (b >= a && b >= c){
-           return b;
-       }
-    else{
-           return c;
-       } 
-    };
+const maxOfThree = (a, b, c) => {
+  if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else {
+    return c;
+  }
+};
 /* Alternative Solution
 const maxOfThree = (a,b,c) => {
         const numsArray = [a,b,c];
@@ -144,12 +133,7 @@ const maxOfThree = (a,b,c) => {
     }   
     };
 */
-console.log('Exercise 6 Result:', maxOfThree(17,4,9));
-
-
-
-
-
+console.log("Exercise 6 Result:", maxOfThree(17, 4, 9));
 
 /*
 Exercise 7: calculateTip()
@@ -162,15 +146,12 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-const calculateTip = (bill,percentage) => {
-    const tip = bill * percentage /100
-    return tip;
+const calculateTip = (bill, percentage) => {
+  const tip = (bill * percentage) / 100;
+  return tip;
 };
 
-
-console.log('Exercise 7 Result:', calculateTip(50, 20));
-
-
+console.log("Exercise 7 Result:", calculateTip(50, 20));
 
 /*
 Exercise 8: convertTemperature()
@@ -186,22 +167,17 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-const convertTemperature = (temp,scale) =>{
-    if (scale === "C" || scale === "c"){
-        return (temp*9/5) + 32;
-    }
-    else if (scale === "F" || scale === "f"){
-        return  (temp-32) * 5/9;
-    }
-    else {
-        return "Wrong Scale!";
-    }
-
+const convertTemperature = (temp, scale) => {
+  if (scale === "C" || scale === "c") {
+    return (temp * 9) / 5 + 32;
+  } else if (scale === "F" || scale === "f") {
+    return ((temp - 32) * 5) / 9;
+  } else {
+    return "Wrong Scale!";
+  }
 };
 
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
-
-
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
 
 /*
 Exercise 9: basicCalculator()
@@ -218,28 +194,21 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
-const basicCalculator = (x,y,operator) =>{
-    if(operator === "subtract"){
-        return x - y;
-        }
-    else if(operator === "add"){
-        return x + y;
-        }
-    else if(operator === "multiply"){
-        return x*y;
-        }
-    else if(operator === "divide"){
-        return x/y;
-        }
-    else{
-        return "Wrong Operator?"
-    }
+const basicCalculator = (x, y, operator) => {
+  if (operator === "subtract") {
+    return x - y;
+  } else if (operator === "add") {
+    return x + y;
+  } else if (operator === "multiply") {
+    return x * y;
+  } else if (operator === "divide") {
+    return x / y;
+  } else {
+    return "Wrong Operator?";
+  }
 };
 
-
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
-
-
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 10: calculateGrade()
@@ -255,19 +224,24 @@ Example: calculateGrade(100) should return A.
 
 Complete the exercise in the space below:
 */
-const calculateGrade = (marks) =>{
-    let grade = 'F';
-    const gradeArray = [["F", 60], ["D", 60], ["C", 70], ["B", 80], ["A", 90]]
-    for (let i=0;i<gradeArray.length;i++){
-        if (marks >= gradeArray[i][1]){
-            grade = gradeArray[i][0];
-        }
+const calculateGrade = (marks) => {
+  let grade = "F";
+  const gradeArray = [
+    ["F", 60],
+    ["D", 60],
+    ["C", 70],
+    ["B", 80],
+    ["A", 90],
+  ];
+  for (let i = 0; i < gradeArray.length; i++) {
+    if (marks >= gradeArray[i][1]) {
+      grade = gradeArray[i][0];
     }
-    return grade;
+  }
+  return grade;
 };
 
-
-console.log('Exercise 10 Result:', calculateGrade(80));
+console.log("Exercise 10 Result:", calculateGrade(80));
 
 /*
 Exercise 11: createUsername()
@@ -284,15 +258,13 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
 
 Complete the exercise in the space below:
 */
-const createUsername = (first,last) => {
-    const charcount = first.length + last.length;
-    const username = first.slice(0,3) + last.slice(0,3) + charcount;
-    return username;
-}
+const createUsername = (first, last) => {
+  const charcount = first.length + last.length;
+  const username = first.slice(0, 3) + last.slice(0, 3) + charcount;
+  return username;
+};
 
-
-console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
-
+console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
 
 /*
 Exercise 12: numArgs()
@@ -302,9 +274,8 @@ This function should return the count of arguments passed to it when called.
 
 Complete the exercise in the space below:
 */
-const numArgs = function() {
-    return arguments.length;
+const numArgs = function () {
+  return arguments.length;
 };
 
-
-console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
